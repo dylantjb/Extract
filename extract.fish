@@ -34,11 +34,9 @@ function x
                     ciso 0 $file $file.iso && extract $file.iso && rm -f $file
                 case '*'
                     echo "extract: '$file' - unknown archive method"
-                    return 1
             end
         else
             echo "'$file' - file does not exist"
-            return 1
         end
     end
 end
