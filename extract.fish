@@ -1,4 +1,4 @@
-function x
+function extract
     for file in $argv
         if test -f $file
             switch $file
